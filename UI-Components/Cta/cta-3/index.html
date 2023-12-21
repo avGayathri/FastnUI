@@ -348,11 +348,14 @@ td {
 	.__g-13 { gap: 20px; }
 	.__rl-14 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
 	body.mobile .__rl-14 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
-	.__c-15 { color: #0784c7 !important; }
+	.__c-15 { color: #2dd4bf !important; }
 	.__ta-16 { text-align: center; }
 	.__rl-17 {  font-family: sans-serif; font-size: 20px; font-weight: 400; line-height: 26px; }
 	body.mobile .__rl-17 {  font-family: sans-serif; font-size: 18px; font-weight: 400; line-height: 24px; }
-	.__c-18 { color: grey !important; }
+	.__c-18 { color: #584b42 !important; }
+	body.dark .__c-18 { color: #a8a29e !important; }
+	.__c-18:visited { color: #584b42 !important; }
+	body.dark  .__c-18:visited { color: #a8a29e !important; }
 	.__ta-19 { text-align: center; }
 	.__w-20 { width: 82vw; }
 	.__h-21 { height: 22vw; }
@@ -363,12 +366,15 @@ td {
 	.__mnh-26 { min-height: 332px; }
 	.__rl-27 {  font-family: sans-serif; font-size: 24px; font-weight: 400; line-height: 31px; }
 	body.mobile .__rl-27 {  font-family: sans-serif; font-size: 22px; font-weight: 400; line-height: 29px; }
-	.__c-28 { color: #0784c7 !important; }
+	.__c-28 { color: #2dd4bf !important; }
 	.__rl-29 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; }
 	body.mobile .__rl-29 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; }
 	.__mt-30 { margin-top: 40px; }
 	.__mb-31 { margin-bottom: 4px; }
-	.__c-32 { color: grey !important; }
+	.__c-32 { color: #584b42 !important; }
+	body.dark .__c-32 { color: #a8a29e !important; }
+	.__c-32:visited { color: #584b42 !important; }
+	body.dark  .__c-32:visited { color: #a8a29e !important; }
 	.__w-33 { width: 100%; }
 	.__pl-34 { padding-left: 8px; }
 	.__pr-35 { padding-right: 8px; }
@@ -385,7 +391,10 @@ td {
 	.__rl-45 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; }
 	body.mobile .__rl-45 {  font-family: sans-serif; font-size: 14px; font-weight: 400; line-height: 19px; }
 	.__mb-46 { margin-bottom: 4px; }
-	.__c-47 { color: grey !important; }
+	.__c-47 { color: #584b42 !important; }
+	body.dark .__c-47 { color: #a8a29e !important; }
+	.__c-47:visited { color: #584b42 !important; }
+	body.dark  .__c-47:visited { color: #a8a29e !important; }
 	.__w-48 { width: 100%; }
 	.__pl-49 { padding-left: 8px; }
 	.__pr-50 { padding-right: 8px; }
@@ -406,8 +415,11 @@ td {
 	.__pb-63 { padding-bottom: 12px; }
 	.__mt-64 { margin-top: 20px; }
 	.__br-65 { border-radius: 4px; }
-	.__c-66 { color: black !important; }
-	.__bgc-67 { background-color: skyblue; }
+	.__c-66 { color: #584b42 !important; }
+	body.dark .__c-66 { color: #a8a29e !important; }
+	.__c-66:visited { color: #584b42 !important; }
+	body.dark  .__c-66:visited { color: #a8a29e !important; }
+	.__bgc-67 { background-color: #2dd4bf; }
 	.__ta-68 { text-align: center; }
     </style><style>
 
@@ -1478,19 +1490,13 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
             rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_small"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "#0784c7",
-              light: "#0784c7"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("accent").get("primary"), inherited);
           },
           function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
             rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_tiny"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.about, inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "grey",
-              light: "grey"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
           }
           ]), inherited);
         },
@@ -1510,10 +1516,7 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
             rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_small"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.login_title, inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "#0784c7",
-              light: "#0784c7"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("accent").get("primary"), inherited);
           },
           function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
@@ -1521,10 +1524,7 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.info_text_1, inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(40), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(4), inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "grey",
-              light: "grey"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
           },
           function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.TextInput);
@@ -1554,10 +1554,7 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("button_small"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.info_text_2, inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(4), inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "grey",
-              light: "grey"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
           },
           function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.TextInput);
@@ -1602,23 +1599,14 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(12), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(20), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(4), inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "black",
-              light: "black"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn.formula([__args__.is_active_1], function () {
               if (function () {
                 return fastn_utils.getter(__args__.is_active_1);
               }()) {
-                return fastn_dom.BackgroundStyle.Solid(fastn.recordInstance({
-                  dark: "blue",
-                  light: "blue"
-                }));
+                return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("hover"));
               } else {
-                return fastn_dom.BackgroundStyle.Solid(fastn.recordInstance({
-                  dark: "skyblue",
-                  light: "skyblue"
-                }));
+                return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("base"));
               }
             }
             ), inherited);
@@ -1652,20 +1640,14 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
             rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_small"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.title, inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "#0784c7",
-              light: "#0784c7"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("accent").get("primary"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
           },
           function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
             rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_tiny"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.about, inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "grey",
-              light: "grey"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.TextAlign, fastn_dom.TextAlign.Center, inherited);
           }
           ]), inherited);
@@ -1686,10 +1668,7 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
             rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("heading_small"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.login_title, inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "#0784c7",
-              light: "#0784c7"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("accent").get("primary"), inherited);
           },
           function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.Text);
@@ -1697,10 +1676,7 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.info_text_1, inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(40), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(4), inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "grey",
-              light: "grey"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
           },
           function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.TextInput);
@@ -1730,10 +1706,7 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             rooti0.setProperty(fastn_dom.PropertyKind.Role, inherited.get("types").get("button_small"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.StringValue, __args__.info_text_2, inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MarginBottom, fastn_dom.Length.Px(4), inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "grey",
-              light: "grey"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
           },
           function (root, inherited) {
             let rooti0 = fastn_dom.createKernel(root, fastn_dom.ElementKind.TextInput);
@@ -1778,23 +1751,14 @@ let trizui_trizwit_com_UI_Components_Cta_cta_3___cta_3 = function (parent, inher
             rooti0.setProperty(fastn_dom.PropertyKind.PaddingVertical, fastn_dom.Length.Px(12), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.MarginTop, fastn_dom.Length.Px(20), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.BorderRadius, fastn_dom.Length.Px(4), inherited);
-            rooti0.setProperty(fastn_dom.PropertyKind.Color, fastn.recordInstance({
-              dark: "black",
-              light: "black"
-            }), inherited);
+            rooti0.setProperty(fastn_dom.PropertyKind.Color, inherited.get("colors").get("text"), inherited);
             rooti0.setProperty(fastn_dom.PropertyKind.Background, fastn.formula([__args__.is_active_1], function () {
               if (function () {
                 return fastn_utils.getter(__args__.is_active_1);
               }()) {
-                return fastn_dom.BackgroundStyle.Solid(fastn.recordInstance({
-                  dark: "blue",
-                  light: "blue"
-                }));
+                return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("hover"));
               } else {
-                return fastn_dom.BackgroundStyle.Solid(fastn.recordInstance({
-                  dark: "skyblue",
-                  light: "skyblue"
-                }));
+                return fastn_dom.BackgroundStyle.Solid(inherited.get("colors").get("cta_primary").get("base"));
               }
             }
             ), inherited);
